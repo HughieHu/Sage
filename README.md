@@ -25,8 +25,6 @@ Sage/
 Each query provides a detailed description of a target paper, including publication metadata, key findings, and citation relationships. The task is to identify the exact paper.
 
 **Fields:**
-- `paper_id`: Semantic Scholar paper ID
-- `paper_title`: Title of the target paper
 - `complete_query`: Detailed natural language query describing the paper
 - `ground_truth`: The target paper (ID and title)
 
@@ -36,10 +34,7 @@ Research-style open-ended questions that span two related papers. The task requi
 
 **Fields:**
 - `question`: Natural language research question
-- `generation_plan`: Description of the question's angle and grounding
-- `source_paper_id` / `cited_paper_id`: The two papers the question bridges
-- `source_paper_title` / `cited_paper_title`: Titles of the two papers
-- `ground_truth`: Papers at multiple relevance levels (`most_relevant`, `relevant`, `quite_relevant`, `somewhat_relevant`)
+- `ground_truth`: Papers at two relevance levels (`most_relevant`, `relevant`)
 
 ## Domains
 
